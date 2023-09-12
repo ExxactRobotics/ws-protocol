@@ -73,7 +73,7 @@ write_basic_package_version_file(
     COMPATIBILITY AnyNewerVersion
 )
 install(EXPORT ${PROJECT_NAME}-targets
-    NAMESPACE ${PROJECT_NAME}
+    NAMESPACE "${PROJECT_NAME}::"
     FILE ${PROJECT_NAME}-targets.cmake
     DESTINATION lib/cmake/${PROJECT_NAME}
 )
